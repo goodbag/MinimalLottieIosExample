@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1970376E4DD04D866FEC124 /* Pods_LottieIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5EFD7AD556ED03A313A8BD /* Pods_LottieIos.framework */; };
 		D6340A4E29CC8F4F008CE2F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6340A4D29CC8F4F008CE2F9 /* AppDelegate.swift */; };
 		D6340A5029CC8F4F008CE2F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6340A4F29CC8F4F008CE2F9 /* SceneDelegate.swift */; };
 		D6340A5229CC8F4F008CE2F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6340A5129CC8F4F008CE2F9 /* ViewController.swift */; };
 		D6340A5529CC8F4F008CE2F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6340A5329CC8F4F008CE2F9 /* Main.storyboard */; };
 		D6340A5729CC8F50008CE2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6340A5629CC8F50008CE2F9 /* Assets.xcassets */; };
 		D6340A5A29CC8F50008CE2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6340A5829CC8F50008CE2F9 /* LaunchScreen.storyboard */; };
+		D6340A6229CC9027008CE2F9 /* Animations in Resources */ = {isa = PBXBuildFile; fileRef = D6340A6129CC9027008CE2F9 /* Animations */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B144302D2BD1377F1D9DE7A /* Pods-LottieIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieIos.release.xcconfig"; path = "Target Support Files/Pods-LottieIos/Pods-LottieIos.release.xcconfig"; sourceTree = "<group>"; };
+		7C5EFD7AD556ED03A313A8BD /* Pods_LottieIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottieIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA843CF9DBB0BFE831F3B0EE /* Pods-LottieIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieIos.debug.xcconfig"; path = "Target Support Files/Pods-LottieIos/Pods-LottieIos.debug.xcconfig"; sourceTree = "<group>"; };
 		D6340A4A29CC8F4F008CE2F9 /* LottieIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6340A4D29CC8F4F008CE2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6340A4F29CC8F4F008CE2F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D6340A5629CC8F50008CE2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6340A5929CC8F50008CE2F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6340A5B29CC8F50008CE2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6340A6129CC9027008CE2F9 /* Animations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Animations; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1970376E4DD04D866FEC124 /* Pods_LottieIos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1BFA1AE2AC06D97F92FF47E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C5EFD7AD556ED03A313A8BD /* Pods_LottieIos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51B3215C5CB5136134B954B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA843CF9DBB0BFE831F3B0EE /* Pods-LottieIos.debug.xcconfig */,
+				0B144302D2BD1377F1D9DE7A /* Pods-LottieIos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D6340A4129CC8F4F008CE2F9 = {
 			isa = PBXGroup;
 			children = (
 				D6340A4C29CC8F4F008CE2F9 /* LottieIos */,
 				D6340A4B29CC8F4F008CE2F9 /* Products */,
+				B51B3215C5CB5136134B954B /* Pods */,
+				B1BFA1AE2AC06D97F92FF47E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		D6340A4C29CC8F4F008CE2F9 /* LottieIos */ = {
 			isa = PBXGroup;
 			children = (
+				D6340A6129CC9027008CE2F9 /* Animations */,
 				D6340A4D29CC8F4F008CE2F9 /* AppDelegate.swift */,
 				D6340A4F29CC8F4F008CE2F9 /* SceneDelegate.swift */,
 				D6340A5129CC8F4F008CE2F9 /* ViewController.swift */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6340A5E29CC8F50008CE2F9 /* Build configuration list for PBXNativeTarget "LottieIos" */;
 			buildPhases = (
+				56C55FA95F1C0B68AC16E8BB /* [CP] Check Pods Manifest.lock */,
 				D6340A4629CC8F4F008CE2F9 /* Sources */,
 				D6340A4729CC8F4F008CE2F9 /* Frameworks */,
 				D6340A4829CC8F4F008CE2F9 /* Resources */,
+				3EF7ABC7B6F75A0FA3CC80C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +132,7 @@
 				};
 			};
 			buildConfigurationList = D6340A4529CC8F4F008CE2F9 /* Build configuration list for PBXProject "LottieIos" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6340A5A29CC8F50008CE2F9 /* LaunchScreen.storyboard in Resources */,
+				D6340A6229CC9027008CE2F9 /* Animations in Resources */,
 				D6340A5729CC8F50008CE2F9 /* Assets.xcassets in Resources */,
 				D6340A5529CC8F4F008CE2F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EF7ABC7B6F75A0FA3CC80C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LottieIos/Pods-LottieIos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LottieIos/Pods-LottieIos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LottieIos/Pods-LottieIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C55FA95F1C0B68AC16E8BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LottieIos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6340A4629CC8F4F008CE2F9 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		D6340A5F29CC8F50008CE2F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA843CF9DBB0BFE831F3B0EE /* Pods-LottieIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		D6340A6029CC8F50008CE2F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B144302D2BD1377F1D9DE7A /* Pods-LottieIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
