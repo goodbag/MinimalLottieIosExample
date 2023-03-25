@@ -21,8 +21,8 @@ class ViewController: UIViewController {
        
         
         animation(name: "earth_loading");
-        animation(name: "3_nfc_scan");
         animation(name: "success");
+        animation(name: "3_nfc_scan");
     }
     
     func animation(name: String) {
